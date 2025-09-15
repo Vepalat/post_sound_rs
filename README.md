@@ -1,15 +1,16 @@
 # about
 whisper_batchstreamのクライアント
+
 post_soundと比べて、標準入力からの音声入力ができない
 
 post_sound rust version.
-impl ws.py.
 # build
 1. rustをインストールする。
 2. `cargo build -r`
 # run
 run `target/release/post_sound_rs`
 
+```
 send mic voice through websocket
 
 Usage: post_sound_rs [OPTIONS] <URL>
@@ -25,6 +26,7 @@ Options:
       --outfile <OUTFILE>  
   -h, --help               Print help
   -V, --version            Print version
+```
 
 ## example
 whisper_batchstreamを同一PCで起動している状態で、
@@ -52,3 +54,4 @@ whisper_batchstreamを同一PCで起動している状態で、
 - cpal record from mic
 - tokio async lib
 - soketto
+
